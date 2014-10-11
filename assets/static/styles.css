@@ -11,7 +11,6 @@ body {
   display: block !important;
 
   height: 100%;
-  min-height: 740px;
 
   overflow-x: hidden;
   overflow-y: auto;
@@ -40,16 +39,16 @@ body {
   display: block;
 
   position: absolute;
-  overflow: hidden;
+  overflow: auto;
 
   width: 900px;
-  height: 700px;
+  height: 100%;
 
   left: 50%;
-  top: 50%;
+  top: 0;
 
   margin-left: -450px;
-  margin-top: -350px;
+  margin-top: 0px;
 
   padding: 40px 60px;
 
@@ -94,16 +93,12 @@ body {
   z-index: 1000;
 
   position: absolute;
-  left: 0;
   top: 0;
-  width: 150px;
-  height: 700px;
-
-  left: 50%;
-  top: 50%;
+  width: 100px;
+  height: 100%;
 
   cursor: pointer;
-  margin-top: -350px;
+  margin-top: 0;
 
   tap-highlight-color: transparent;
   -o-tap-highlight-color: transparent;
@@ -111,18 +106,10 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 #prev-slide-area {
-  margin-left: -550px;
+  left:0;
 }
 #next-slide-area {
-  margin-left: 400px;
-}
-.slides.layout-widescreen #prev-slide-area,
-.slides.layout-faux-widescreen #prev-slide-area {
-  margin-left: -650px;
-}
-.slides.layout-widescreen #next-slide-area,
-.slides.layout-faux-widescreen #next-slide-area {
-  margin-left: 500px;
+  right:0;
 }
 
 /* Slides */
